@@ -67,9 +67,17 @@
   src: url('../public/fonts/Bogart-Bold.ttf') format('truetype');
 }
 
-.titre-section {
+.title-section {
   font-family: 'Bogart Regular';
   font-size: 4rem;
   color: black;
   margin-bottom: 2rem;
+}
+
+.section {
+  padding: 3rem;
+}
+
+.text-right {
+  text-align: right;
 }
