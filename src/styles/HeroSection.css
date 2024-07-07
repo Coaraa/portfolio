@@ -1,0 +1,51 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    background-color: var(--beige);
+    margin-top: 5vh ;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    padding: 10vh 0 10vh 0;
+}
+
+.portfolio {
+    margin-bottom: 4rem;
+}
+
+.name {
+    font-family: Bogart SemiBold;
+    font-size: 7rem;
+}
+
+.status {
+    margin-top: 5rem;
+    font-family: Georgia Pro Light;
+}
+
+.main-portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    background-image: url('../../public/images/shape.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90%;
+}
+
+.main-portrait img {
+    height: 40vh;
+    width: 40vh;
+    border-radius: 100%;
+}
+

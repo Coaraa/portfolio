@@ -1,0 +1,75 @@
+:root {
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 834px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+  --dark-pink: #BA8383;
+  --pink : #b88c7a;
+  --brown: #AD9C92;
+  --light-brown: #D1C4B0;
+  --beige : #F8F5EF;
+}
+
+@font-face {
+  font-family: 'Georgia Pro Cond';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../public/fonts/GeorgiaPro-CondRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Georgia Pro Cond Italic';
+  font-style: italic;
+  font-weight: normal;
+  src: url('../public/fonts/GeorgiaPro-CondItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Georgia Pro Cond Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../public/fonts/GeorgiaPro-CondBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Georgia Pro Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../public/fonts/GeorgiaPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bogart Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../public/fonts/Bogart-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bogart Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../public/fonts/Bogart-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bogart SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../public/fonts/Bogart-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bogart Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../public/fonts/Bogart-Bold.ttf') format('truetype');
+}
+
+.titre-section {
+  font-family: 'Bogart Regular';
+  font-size: 4rem;
+  color: black;
+  margin-bottom: 2rem;
+}

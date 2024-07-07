@@ -1,0 +1,17 @@
+footer {
+    background-color: var(--light-brown);
+    color: var(--beige);
+    text-align: center;
+    font-family: Georgia Pro Light;
+    padding: 3rem;
+}
+
+.footer-name {
+    font-family: Bogart Regular;
+    font-size: 2rem;
+}   
+
+.social-icon > img{
+    margin: 3rem 3rem 0 3rem;
+    height: 3rem;
+}
