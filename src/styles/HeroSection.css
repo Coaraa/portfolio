@@ -40,10 +40,10 @@
     align-items: center;
     justify-content: center;
     width: 50vw;
-    background-image: url('../../public/images/shape.png');
+    /*background-image: url('../../public/images/shape.png');
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     height: 90%;
 }
 
@@ -51,6 +51,7 @@
     height: 40vh;
     width: 40vh;
     border-radius: 100%;
+    border: 0.5rem solid var(--light-brown);
 }
 
 
