@@ -25,9 +25,13 @@
     font-size: 7rem;
 }
 
-.status {
+.discovery {
     margin-top: 5rem;
+    padding: 1rem;
     font-family: Georgia Pro Light;
+    font-size: 1.5rem;
+    background-color: var(--light-brown);
+    border-radius: 1rem;
 }
 
 .main-portrait {

@@ -2,6 +2,10 @@ import React from 'react';
 import '../App.css';
 import '../styles/Navbar.css';
 
+function goTo(id) {
+  document.getElementById(id).scrollIntoView({behavior: "smooth"});
+}
+
 function Navbar() {
   return (
     <>
@@ -10,17 +14,20 @@ function Navbar() {
           <a href="/" className="navbar-logo">
             <img src="images/logo.png" alt="logo" />
           </a>
-          <div className="brand">
+          
+          <a href="/" className="brand">
             <div className='brand-name'>Clara</div>
             <span className="brand-name">Sithidej</span>
-          </div>
+          </a>
+          
           <div className="nav-menu">
             <div className="nav-item">
-              <a href="/" className="nav-links">Profil</a>
+              <div className="nav-links" onClick={() => goTo('projects')}>Projets</div>
             </div>
             <div className="nav-item">
-              <a href="/" className="nav-links">Portfolio</a>
+              <div className="nav-links" onClick={() => goTo('about')}>Profil</div>
             </div>
+            
           </div>
         </div>
       </nav>

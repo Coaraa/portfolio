@@ -4,9 +4,9 @@ import '../styles/AboutMe.css';
 
 function AboutMe() {
   return (
-    <div className='section about-container'>
+    <div id="about" className='section about-container'>
       <div className='portrait'>
-        <img src="" alt="Portrait" />
+        <img src="/images/avatar.jpg" alt="Portrait" />
       </div>
       <div className='description'>
         <div className='title-section'>À propos de moi</div>

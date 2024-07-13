@@ -37,6 +37,8 @@
 
 .brand {
     font-family: Bogart Bold;
+    color: black;
+    text-decoration: none;
     display: flex;
     align-items: center;
     flex-direction: column;

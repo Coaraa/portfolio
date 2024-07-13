@@ -8,3 +8,8 @@
   width: 50%;
   margin-right: 2rem;
 }
+
+.portrait img {
+  width: 100%;
+  border-radius: 50%;
+}
