@@ -35,6 +35,11 @@
     cursor: pointer;
 }
 
+.discovery:hover {
+    background-color: var(--brown);
+    color: var(--beige);
+}
+
 .main-portrait {
     display: flex;
     flex-direction: column;
@@ -73,6 +78,10 @@
         display: none;
     }
 
+    .discovery:hover {
+        background-color: var(--light-brown);
+        color: black;
+    }
 }
 
 @media screen and (max-width: 1440px) {
