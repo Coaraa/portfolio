@@ -14,6 +14,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .nav-menu {
@@ -22,14 +24,29 @@
     align-items: center;
 }
 
-.nav-item {
-    margin-right: 1rem;
-}
-
 .nav-links {
     color: black;
+    text-align: right;
     text-decoration: none;
     cursor: pointer;
+    margin-right: 1rem;
+    display: block;
+}
+
+.nav-links:hover {
+    color: var(--brown);
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.burger img {
+    height: 2rem;
+    cursor: pointer;
+    align-self: right;
 }
 
 .navbar-logo > img{
@@ -48,8 +65,15 @@
     transform: translateX(-50%);    
 }
 
-@media screen and (max-width: 1024px) {
-    .nav-links {
-        display: none;
-    } 
+.nav-menu-mobile {
+    display: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .nav-menu {
+        display: none;
+    }
+
+    
+}
+  
