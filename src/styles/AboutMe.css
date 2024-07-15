@@ -5,7 +5,7 @@
 }
 
 .portrait {
-  width: 50%;
+  width: 30%;
   margin-right: 2rem;
 }
 
@@ -17,5 +17,11 @@
 @media screen and (max-width: 1024px) {
   .portrait {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .portrait {
+    width: 50%;
   }
 }

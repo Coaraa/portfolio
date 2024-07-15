@@ -32,6 +32,7 @@
     font-size: 1.5rem;
     background-color: var(--light-brown);
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .main-portrait {
@@ -48,8 +49,8 @@
 }
 
 .main-portrait img {
-    height: 40vh;
-    width: 40vh;
+    height: 50vh;
+    width: 50vh;
     border-radius: 100%;
     border: 0.5rem solid var(--light-brown);
 }
@@ -72,4 +73,11 @@
         display: none;
     }
 
+}
+
+@media screen and (max-width: 1440px) {
+    .main-portrait img {
+        height: 40vh;
+        width: 40vh;
+    }
 }
