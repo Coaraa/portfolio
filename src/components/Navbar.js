@@ -37,7 +37,7 @@ function Navbar() {
           </div>
           
           <div className="nav-menu-mobile">
-            <a href="javascript:void(0);" className="burger" onClick={burgerMenu}>
+            <a href="#" className="burger" onClick={burgerMenu}>
               <img src="images/burger.png" alt="burger" />
             </a>
 
