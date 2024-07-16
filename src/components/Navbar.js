@@ -37,9 +37,9 @@ function Navbar() {
           </div>
           
           <div className="nav-menu-mobile">
-            <a href="#" className="burger" onClick={burgerMenu}>
+            <button className="burger" onClick={burgerMenu}>
               <img src="images/burger.png" alt="burger" />
-            </a>
+            </button>
 
             <div id="links">
               <div className="nav-links" onClick={() => goTo('projects')}>Projets</div>
