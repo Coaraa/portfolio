@@ -38,6 +38,7 @@
 .discovery:hover {
     background-color: var(--brown);
     color: var(--beige);
+    transition: 0.5s;
 }
 
 .main-portrait {
