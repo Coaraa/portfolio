@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .parallax {
     height: 100%;
     width: 100%;
@@ -12,6 +14,17 @@
         margin-bottom: 18rem;
         width: 20%;
         text-align: center;
+
+        @include media(mobile) {
+            font-size: 2rem !important;
+            width: 60% !important;
+        }
+
+        @include media(tablet) {
+            font-size: 2.5rem;
+            margin-bottom: 10rem;
+            width: 30%;
+        }
     }
 
     .desk {
@@ -22,6 +35,8 @@
         height: 100%;
         position: absolute;
         z-index: 2;
+
+      
     }
 
     .stars {
@@ -33,5 +48,33 @@
         position: absolute;
         z-index: 1;
         opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 510px) {
+    .parallax {
+        h1 {
+            width: 40% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width:768px) {
+    .parallax {
+        h1 {
+            font-size: 2.5rem !important;
+            width: 29% !important;
+            margin-bottom: 8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1365px) and (min-width:1025px) {
+    .parallax {
+        h1 {
+            font-size: 2.5rem !important;
+            width: 20% !important;
+            margin-bottom: 10rem;
+        }
     }
 }

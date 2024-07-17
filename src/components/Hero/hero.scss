@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero {
     height: 100vh;
     background: linear-gradient(180deg, var(--blue), #3c415c);
@@ -17,21 +19,50 @@
             justify-content: center;
             gap: 4rem; 
             z-index: 10;
-        
 
+            @include media(mobile) {
+                height: 70%;
+                width: 100%;
+                gap: 2rem;
+                align-items: center;
+                text-align: center;
+                padding-top: 7rem;
+                margin: auto !important
+            }
+
+            @include media(tablet) {
+                margin: 0 2rem;
+            }
+        
             h2 {
                 font-size: 2rem;
                 color: var(--light-beige);
                 letter-spacing: 10px;
+
+                @include media(mobile) {
+                    font-size: 1.5rem;
+                }
             }
 
             h1 {
                 font-size: 5rem;
+
+                @include media(mobile) {
+                    font-size: 3rem;
+                }
             }
 
             .buttons {
                 position: inherit;
                 z-index: 50;
+
+                @include media(mobile) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    width: fit-content;
+                    margin: auto;
+                }
                 
                 a, a:visited {
                     padding: 20px;
@@ -65,6 +96,10 @@
         img {
             height: 100%;
         }
+
+        @include media(tablet) {
+            display: none;
+        }
     }
 
     .slidingTextContainer {
@@ -76,96 +111,16 @@
         color: #0a0a0c13;
         z-index: 1;
         width: 50%;
-    }
-}
 
-
-@media screen and (max-width: 424px) {
-    .hero {
-        .wrapper {
-            margin: 1rem;
-
-            .textContainer {
-                h1 {
-                    font-size: 3rem;
-                }
-
-                h2 {
-                    font-size: 1.5rem;
-                }
-
-                .buttons {
-                    display : flex;
-                    flex-direction: column;
-                    gap: 1rem;
-                    width: fit-content;
-
-                    a, a:visited {
-                        text-align: center;
-                        padding: 5px;
-                        font-size: 1rem;
-                    }
-                }
-            }
+        @include media(mobile) {
+            font-size: 5rem !important;
+            width: 100% !important;
+            bottom: 5% !important;
         }
 
-        .imageContainer {
-            display: none;
+        @include media(tablet, desktop) {
+            font-size: 10rem;
         }
     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 425px) {
-    .hero {
-        .wrapper {
-            margin: 2rem;
-
-            .textContainer {
-                padding-top: 2rem;
-                gap: 2rem;
-
-                h1 {
-                    font-size: 3rem;
-                }
-
-                h2 {
-                    font-size: 1.5rem;
-                }
-
-                .buttons {
-                    a, a:visited {
-                        padding: 10px;
-                        font-size: 0.8rem;
-                    }
-                }
-            }
-
-            .slidingTextContainer {
-                font-size: 7rem;
-            }
-        }
-
-        .imageContainer {
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width: 1366px)  and (min-width: 769px) {
-    .hero {
-
-        .wrapper {
-            .textContainer {
-                margin : 2rem;
-            }
-
-            .slidingTextContainer {
-                font-size: 10rem;
-            }
-        }
-        .imageContainer {
-            display: none;
-        }
-    }
-}
- 

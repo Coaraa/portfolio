@@ -4,8 +4,8 @@ import MyCarousel from './myCarousel/MyCarousel';
 const Portfolio = () => {
   return (
     <div className="portfolio">
-      <div className="textContrainer">
-        <h1 className="mainTitle">Présentation de mes différents projets</h1>
+      <div className="textContainer">
+        <h1 className="mainTitle">Mes différents projets</h1>
       </div>
       <MyCarousel />
     </div>

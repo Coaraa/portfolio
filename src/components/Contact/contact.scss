@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .contact {
     height: 100%;
     max-width: 1366px;
@@ -6,15 +8,41 @@
     align-items: center;
     gap: 4vw;
 
+    @include media(mobile) {
+        margin: 1rem;
+    }
+
+    @include media(tablet, desktop) {
+        margin: 2rem;
+    }
+
     .textContainer {
         flex : 3;
         display: flex;
         flex-direction: column;
         gap: 3rem;
 
+        @include media(mobile) {
+            gap: 1rem;
+        }
+
+        @include media(tablet) {
+            gap: 2rem;
+        }
+
         h1 {
             font-size: 5rem;
             font-weight: bold;
+
+            @include media(mobile) {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            @include media(tablet) {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
         }
 
         h2 {
@@ -24,12 +52,24 @@
             display: flex;
             align-items: center;
             gap: 10px;
+
+            @include media(mobile) {
+                font-size: 1rem;
+            }
+
+            @include media(tablet) {
+                font-size: 1.5rem;
+            }
         }
 
         a, a:visited {
             color: var(--white);
             font-size: 1.5rem;
             font-weight: bold;
+
+            @include media(mobile) {
+                font-size: 1rem;
+            }
         }
 
         img {
@@ -42,39 +82,13 @@
     .svgContainer {
         flex : 2;
 
+        @include media(mobile, tablet) {
+            display: none;
+        }
+
         svg {
             width: 100%;
             height: auto;
         }
     }
-}
-
-@media screen and (max-width: 1024px) {
-    .contact {
-        margin: 2rem;
-
-        .svgContainer {
-            display: none;
-        }
-
-        .textContainer {
-            gap: 2rem;
-
-            h1 {
-                font-size: 3rem;
-                margin-bottom: 1rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1366px) and (min-width: 1024px) {
-    .contact {
-        margin : 2rem;
-    }
-    
 }

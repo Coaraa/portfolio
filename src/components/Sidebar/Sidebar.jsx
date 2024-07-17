@@ -6,11 +6,11 @@ import { motion } from 'framer-motion'
 
 const variants = {
     open: {
-        clipPath: 'circle(1200px at 50px 50px)',
+        clipPath: 'circle(3000px at 50px 50px)',
         transition: {
             delay: 0.2,
             type: 'spring',
-            stiffness: 100,
+            stiffness: 50,
             damping: 40
         }
     },

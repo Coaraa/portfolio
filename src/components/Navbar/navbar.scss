@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .navbar {
     height: 5rem;
     width: 100%;
@@ -11,10 +13,19 @@
         align-items: center;
         justify-content: space-between;
         height: 100%;
+
+        @include media(desktop) {
+            justify-content: flex-end;
+            padding: 1rem;
+        }
     }
 
     span {
         font-weight: bold;
+
+        @include media(desktop) {
+            display: none;
+        }
     }
 
     .social {
