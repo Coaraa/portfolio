@@ -1,0 +1,171 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, var(--blue), #3c415c);
+    overflow: hidden;
+    position: relative;
+
+    .wrapper {
+        max-width: 1366px;
+        margin: auto;
+        height: 100%;
+
+        .textContainer {
+            height: 100%;
+            padding-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4rem; 
+            z-index: 10;
+        
+
+            h2 {
+                font-size: 2rem;
+                color: var(--light-beige);
+                letter-spacing: 10px;
+            }
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            .buttons {
+                position: inherit;
+                z-index: 50;
+                
+                a, a:visited {
+                    padding: 20px;
+                    border: 1px solid var(--light-beige);
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: var(--light-beige);
+                    font-size: 1rem;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    background-color: var(--light-beige);
+                    color: var(--blue);
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .imageContainer{
+        height: 100%;
+        padding-top: 5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .slidingTextContainer {
+        position: absolute;
+        bottom: 0;
+        font-size: 15rem;
+        font-weight: bold;
+        white-space: nowrap;
+        color: #0a0a0c13;
+        z-index: 1;
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 424px) {
+    .hero {
+        .wrapper {
+            margin: 1rem;
+
+            .textContainer {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                .buttons {
+                    display : flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    width: fit-content;
+
+                    a, a:visited {
+                        text-align: center;
+                        padding: 5px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .imageContainer {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    .hero {
+        .wrapper {
+            margin: 2rem;
+
+            .textContainer {
+                padding-top: 2rem;
+                gap: 2rem;
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                .buttons {
+                    a, a:visited {
+                        padding: 10px;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .slidingTextContainer {
+                font-size: 7rem;
+            }
+        }
+
+        .imageContainer {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px)  and (min-width: 769px) {
+    .hero {
+
+        .wrapper {
+            .textContainer {
+                margin : 2rem;
+            }
+
+            .slidingTextContainer {
+                font-size: 10rem;
+            }
+        }
+        .imageContainer {
+            display: none;
+        }
+    }
+}
+ 

@@ -1,0 +1,160 @@
+.carousel-root {
+    width: 80vw !important;
+    height: 80vh !important;
+
+    .carousel {
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 25px;
+        position: relative;
+
+        .slider-wrapper, .slider {
+            height: 100% !important;
+        }
+
+        .title {
+            position: absolute;
+            width: 80%;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            padding: 1rem;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--white);
+        }
+        
+        .carouselItem {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .imageBox {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.5s ease-in-out;
+                    opacity: 0.8;
+                }
+
+            }
+
+            .overlay {
+                opacity: 0;
+                position: absolute;
+                width: 80%;
+                top: 50%;
+                left: 10%;
+                transform: translateY(-50%);
+                transition: 0.5s ease-in-out;
+                padding: 1rem;
+                text-align: left;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: var(--beige);
+
+                .overlayTitle {
+                    margin: 1rem 0;
+                    text-align: center;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .carouselItem:hover {
+            .imageBox img {
+                filter: brightness(0.5) grayscale(0.7);
+            }
+
+            .title {
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+            }
+
+            .overlay {
+                opacity: 1;
+                z-index: 1;
+
+                .overlayTitle {
+                    scale: 1;
+                    opacity: 1;
+                }
+
+                .overlayDescription {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+                .gitLink {
+                    margin-top: 1rem;
+
+                    a {
+                        opacity: 1;
+                        color: var(--gray);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .carouselItem:not(:hover) {
+            .imageBox img {
+                filter: brightness(1) grayscale(0);
+            }
+
+            .title {
+                opacity: 1;
+                transition: 0.5s ease-in-out;
+            }
+
+            .overlay {
+                opacity: 0;
+                z-index: -1;
+
+                .overlayTitle {
+                    scale: 0.5;
+                    opacity: 0;
+                }
+
+                .overlayDescription {
+                    opacity: 0;
+                    transform: translateY(100%);
+                }
+
+                .gitLink {
+                    margin-top: 1rem;
+
+                    a {
+                        opacity: 0;
+                        color: var(--gray);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .carouselItem::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+
+        .carouselItem:hover::after {
+            opacity: 1;
+            inset: 20px;
+        }
+
+
+
+    }
+}

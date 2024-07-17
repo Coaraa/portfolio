@@ -1,0 +1,39 @@
+.portfolio {
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+
+    .mainTitle {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 427px) {
+    .portfolio {
+        .mainTitle {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .portfolio {
+        .textContainer {
+            width: 50%;
+            padding: 0 1rem;
+        }
+
+        .mainTitle {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+    }
+}
