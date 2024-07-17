@@ -13,19 +13,10 @@
         align-items: center;
         justify-content: space-between;
         height: 100%;
-
-        @include media(desktop) {
-            justify-content: flex-end;
-            padding: 1rem;
-        }
     }
 
     span {
         font-weight: bold;
-
-        @include media(desktop) {
-            display: none;
-        }
     }
 
     .social {
@@ -39,4 +30,18 @@
             filter : invert(1);
         }
     }
+}
+
+@media screen and (max-width: 1530px) {
+    .navbar {
+        .wrapper {
+            justify-content: flex-end;
+            padding: 1rem;
+        }
+
+        span {
+            display: none;
+        }
+    }
+    
 }
