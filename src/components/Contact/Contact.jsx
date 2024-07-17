@@ -23,7 +23,7 @@ const Contact = () => {
                 <motion.h1 variants={variants}>N'hésitez pas à me contacter !</motion.h1>
                 <motion.div className="item" variants={variants}>
                     <h2>Mail <img src="/email.png" alt="Email" /></h2>
-                    <span><a href="mailto:clara.stihidej@gmail.com">clara.stihidej@gmail.com</a></span>
+                    <span><a href="mailto:clara.sithidej@gmail.com">clara.sithidej@gmail.com</a></span>
                 </motion.div>
                 <motion.div className="item" variants={variants}>
                     <h2>Profil LinkedIn <img src="/linkedin.png" alt="LinkedIn" /></h2>
