@@ -85,10 +85,5 @@
         @include media(mobile, tablet) {
             display: none;
         }
-
-        svg {
-            width: 100%;
-            height: auto;
-        }
     }
 }
