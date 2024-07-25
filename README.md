@@ -37,4 +37,4 @@ Vous pourrez ensuite accéder au projet en vous rendant sur votre localhost : [h
 
 ## 🌐 Lien du projet
 
-Vous pourrez le retrouver à cette [adresse](https://sithidej-clara.fr/)
+Vous pourrez le retrouver à cette [adresse](https://sithidej-clara.fr/).
