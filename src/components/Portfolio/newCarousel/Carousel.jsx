@@ -13,7 +13,7 @@ const data = [
       year: '2023',
       technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'SQL', 'Leaflet'],
       tools: ['Visual Studio Code', 'Xampp'],
-      gitLink: <a href="https://github.com/Coaraa/telecom" title="GitHub" target="_blank" rel="noopener noreferrer">Lien GitHub du projet</a>
+      gitLink: <a href="https://github.com/Coaraa/telecom" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
     },
     {
       id: 2,
@@ -21,9 +21,9 @@ const data = [
       description: "Ce E-commerce fictif vous permet de réaliser l'ensemble des actions classiques : commander des produits ou vous connecter. Il fournit une interface d'administration simple.",
       image: "/carousel/boutique.png",
       year: '2023',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Twig', 'MySQL', 'Bootstrap 5'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Twig', 'MySQL', 'Bootstrap'],
       tools: ['Visual Studio Code', 'Xampp'],
-      gitLink: <a href="https://github.com/Coaraa/shopping-bag" title="GitHub" target="_blank" rel="noopener noreferrer">Lien GitHub du projet</a>
+      gitLink: <a href="https://github.com/Coaraa/shopping-bag" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const data = [
       year: '2024',
       technologies: ['C++', 'SFML'],
       tools: ['Visual Studio Code', 'Linux'],
-      gitLink: <a href='https://github.com/Coaraa/It-takes-IO' title='GitHub' target='_blank' rel='noopener noreferrer'>Lien GitHub du projet</a>
+      gitLink: <a href='https://github.com/Coaraa/It-takes-IO' title='GitHub' target='_blank' rel='noopener noreferrer'>GitHub</a>
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ const data = [
       year: '2024',
       technologies: ['Java', 'Swing'],
       tools: ['IntelliJ IDEA'],
-      gitLink: <a href="https://github.com/Coaraa/Sokoban" title="GitHub" target="_blank" rel="noopener noreferrer">Lien GitHub du projet</a>
+      gitLink: <a href="https://github.com/Coaraa/Sokoban" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
     },
     {
       id: 5,
@@ -53,14 +53,14 @@ const data = [
       year: '2024',
       technologies: ['Java', 'DatagramSocket'],
       tools: ['IntelliJ IDEA'],
-      gitLink: <a href="https://github.com/Coaraa/ChatUDP" title="GitHub" target="_blank" rel="noopener noreferrer">Lien GitHub du projet</a>
+      gitLink: <a href="https://github.com/Coaraa/ChatUDP" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
     }
   ];
 
 
 function Carousel() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
