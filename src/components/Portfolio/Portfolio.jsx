@@ -1,6 +1,5 @@
 import "./portfolio.scss";
-import MyCarousel from './myCarousel/MyCarousel';
-import Carousel from './newCarousel/Carousel';
+import Carousel from './Carousel/Carousel';
 
 const Portfolio = () => {
   return (
@@ -8,7 +7,6 @@ const Portfolio = () => {
       <div className="textContainer">
         <h1 className="mainTitle">Mes différents projets</h1>
       </div>
-      {/* <MyCarousel /> */}
       <Carousel />
     </div>
   )
