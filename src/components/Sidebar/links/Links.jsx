@@ -30,7 +30,7 @@ const Links = () => {
 
 
   const items = [
-    "Home",
+    "Accueil",
     "Portfolio",
     "À propos",
     "Contact"
