@@ -3,8 +3,8 @@
 .carousel {
     width: 100%;
 
-    .slick-slide > div {
-        margin: 0 1rem;        
+    .slick-slide>div {
+        margin: 0 1rem;
     }
 
     .item {
@@ -26,6 +26,7 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 0.5rem;
+                filter: grayscale(70%);
             }
         }
 
@@ -38,7 +39,7 @@
             text-align: center;
 
             h1 {
-                font-size: 1.5rem; 
+                font-size: 1.5rem;
 
                 @include media(tablet) {
                     font-size: 1.25rem;
@@ -126,7 +127,15 @@
     }
 
     .item:hover {
-        transform: translateY(-3px);
+        transform: scale(1.005);
         transition: 0.6s;
+
+        .imageBox {
+            img {
+                filter: grayscale(0);
+                box-shadow: 0 0 0.3rem 0.1rem var(--blue);
+
+            }
+        }
     }
 }
