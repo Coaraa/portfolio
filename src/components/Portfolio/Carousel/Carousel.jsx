@@ -17,7 +17,7 @@ const data = [
   }, 
   {
     id: 2,
-    title: 'Site fictif de boutique en ligne',
+    title: 'Site de boutique en ligne',
     description: "Ce E-commerce fictif vous permet de réaliser l'ensemble des actions classiques : commander des produits ou vous connecter. Il fournit une interface d'administration simple.",
     image: "/carousel/boutique.png",
     year: 'Janvier 2024',
