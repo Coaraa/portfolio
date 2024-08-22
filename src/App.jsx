@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact/Contact";
 import Portfolio from "./components/Portfolio/Portfolio";
 import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
 import Parallax from "./components/Parallax/Parallax";
 
 const App = () => {
@@ -13,14 +14,11 @@ const App = () => {
       <Hero />
     </section>
     <section id="Portfolio">
-      <Parallax type="portfolio"/>
+      <Parallax />
     </section>
     <section>
-      <Portfolio/>
+      <Portfolio />
     </section>
-    {/* <section id="À propos">
-      <Parallax type="about"/>
-    </section> */}
     <section>
       <About />
     </section>
