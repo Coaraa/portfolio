@@ -74,7 +74,17 @@ const data = [
     technologies: ['HTML', 'CSS', 'Sass', 'JavaScript', 'Node.js', 'React'],
     tools: ['Visual Studio Code', 'Adobe Photoshop'],
     gitLink: <a href="https://github.com/Coaraa/portfolio" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
-  }
+  }, 
+  {
+    id: 8,
+    title: 'Développement de sites et maintenance',
+    description: "Développement de sites web et maintenance pour des clients. Création de sites vitrines à l'aide de Wordpress et Elementor.",
+    image: "/carousel/restaurant.png",
+    year: 'Août 2024',
+    technologies: [],
+    tools: ['Wordpress', 'Elementor'],
+    gitLink: <a href="https://restaurant-la-thailande.fr/" title="Site" target="_blank" rel="noopener noreferrer">Accéder au site</a>
+  } 
 ];
 
 
@@ -118,7 +128,9 @@ function Carousel() {
                       tool === 'Xampp' ? <img src='/carousel/tools/xampp.png' alt='Xampp' title='Xampp' /> :
                         tool === 'Linux' ? <img src='/carousel/tools/linux.png' alt='Linux' title='Linux' /> : 
                           tool === 'Adobe Illustrator' ? <img src='/carousel/tools/illustrator.png' alt='Adobe Illustrator' title='Adobe Illustrator' /> :
-                            tool === 'Adobe Photoshop' ? <img src='/carousel/tools/photoshop.png' alt='Adobe Photoshop' title='Adobe Photoshop' /> : null
+                            tool === 'Adobe Photoshop' ? <img src='/carousel/tools/photoshop.png' alt='Adobe Photoshop' title='Adobe Photoshop' /> :
+                              tool === 'Wordpress' ? <img src='/carousel/tools/wordpress.png' alt='Wordpress' title='Wordpress' /> :
+                                tool === 'Elementor' ? <img src='/carousel/tools/elementor.png' alt='Elementor' title='Elementor' /> : null
                 ))}</p>
               <p className='link'>{slide.gitLink}</p>
             </div>

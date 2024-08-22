@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact/Contact";
 import Portfolio from "./components/Portfolio/Portfolio";
 import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
 import Parallax from "./components/Parallax/Parallax";
 
 const App = () => {
