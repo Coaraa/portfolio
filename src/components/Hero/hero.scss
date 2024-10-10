@@ -64,19 +64,20 @@
                     margin: auto;
                 }
                 
-                a, a:visited {
+                button {
                     padding: 20px;
                     border: 1px solid var(--light-beige);
                     border-radius: 10px;
                     background-color: transparent;
                     color: var(--light-beige);
+                    font-family: inherit;
                     font-size: 1rem;
                     margin-right: 20px;
                     cursor: pointer;
                     text-decoration: none;
                 }
 
-                a:hover {
+                button:hover {
                     background-color: var(--light-beige);
                     color: var(--blue);
                     transition: 0.5s ease-in-out;
