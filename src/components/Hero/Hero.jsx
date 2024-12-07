@@ -39,8 +39,8 @@ const Hero = () => {
                     <motion.h2 variants={textVariants}>PORTFOLIO</motion.h2>
                     <motion.h1 variants={textVariants}>SITHIDEJ Clara</motion.h1>
                     <motion.div className="buttons" variants={textVariants}>
-                        <motion.button onclick="window.scrollTo({top: getElementById('Portfolio').offsetTop, behavior: 'smooth'})" variants={textVariants}>↓ Découvrir mes projets ↓</motion.a>
-                        <motion.button onclick="window.scrollTo({top: getElementById('Contact').offsetTop, behavior: 'smooth'}) variants={textVariants}>Me contacter</motion.a>
+                        <motion.button onclick="window.scrollTo({top: getElementById('Portfolio').offsetTop, behavior: 'smooth'})" variants={textVariants}>↓ Découvrir mes projets ↓</motion.button>
+                        <motion.button onclick="window.scrollTo({top: getElementById('Contact').offsetTop, behavior: 'smooth'})" variants={textVariants}>Me contacter</motion.button>
                     </motion.div>
                 </motion.div>
                 <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
