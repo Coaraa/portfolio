@@ -19,7 +19,7 @@ const App = () => {
       <Portfolio />
     </section>
     <section>
-      <About id ="À propos"/>
+      <About id ="A propos"/>
     </section>
     <section id="Contact">
       <Contact />
