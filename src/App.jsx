@@ -8,7 +8,7 @@ import Parallax from "./components/Parallax/Parallax";
 
 const App = () => {
   return <div>
-    <section id="Home">
+    <section id="Accueil">
       <Navbar />
       <Hero />
     </section>
@@ -19,7 +19,7 @@ const App = () => {
       <Portfolio />
     </section>
     <section>
-      <About />
+      <About id ="À propos"/>
     </section>
     <section id="Contact">
       <Contact />
