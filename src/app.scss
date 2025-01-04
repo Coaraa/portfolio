@@ -1,40 +1,42 @@
 :root {
-    --purple: #32213A;
-    --blue: #383B53;
-    --gray: #66717E;
-    --light-beige: #D4D6B9;
-    --beige: #D1CAA1;
-    --white: #f5f5f5;
+  --purple: #32213A;
+  --blue: #383B53;
+  --gray: #66717E;
+  --light-beige: #D4D6B9;
+  --beige: #D1CAA1;
+  --white: #f5f5f5;
 }
 
 $breakpoints: (
-  mobile : 767px, 
-  tablet : 1024px, 
+  mobile : 767px,
+  tablet : 1024px,
   desktop: 1366px
 );
 
-@mixin media($keys...){
-  @each $key in $keys { 
-    @media (max-width: map-get($breakpoints, $key)){
+@mixin media($keys...) {
+  @each $key in $keys {
+    @media (max-width: map-get($breakpoints, $key)) {
       @content
-    } 
+    }
   }
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
-    background-color: var(--blue); 
-    color: var(--white);
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 section {
-    height: 100vh;
-    scroll-snap-align: center;
+  height: 100vh;
 }
 
+section#Skills {
+  height: auto;
+}
