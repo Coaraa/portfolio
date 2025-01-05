@@ -2,28 +2,28 @@ import "./app.scss";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact/Contact";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
-import Parallax from "./components/Parallax/Parallax";
+import Technologies from "./components/Technologies/Technologies";
 
 const App = () => {
   return <div>
-    <section id="Accueil">
+    {/* <section id="Home">
       <Navbar />
       <Hero />
     </section>
-    <section id="Portfolio">
-      <Parallax />
+    <section>
+      <About id ="About"/>
+    </section>
+    <section id="Projects">
+      <Projects />
     </section>
     <section>
-      <Portfolio />
-    </section>
-    <section>
-      <About id ="A propos"/>
+      <Technologies />
     </section>
     <section id="Contact">
       <Contact />
-    </section>
+    </section> */}
   </div>;
 };
 

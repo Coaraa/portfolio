@@ -1,9 +1,9 @@
-import "./portfolio.scss";
+import "./projects.scss";
 import Carousel from './Carousel/Carousel';
 
-const Portfolio = () => {
+const Projects = () => {
   return (
-    <div className="portfolio">
+    <div className="projects">
       <div className="textContainer">
         <h1 className="mainTitle">Mes différents projets</h1>
       </div>
@@ -12,4 +12,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Projects
