@@ -4,7 +4,13 @@
     --gray: #66717E;
     --light-beige: #D4D6B9;
     --beige: #D1CAA1;
-    --white: #f5f5f5;
+    
+
+    --white: #F5F5F5;
+    --gray: #B7B5B3;
+    --green: #4C6B56;
+    --light-green: #759780;
+    --black: #141301;
 }
 
 $breakpoints: (
@@ -29,12 +35,11 @@ $breakpoints: (
 }
 
 body {
-    background-color: var(--blue); 
-    color: var(--white);
+    background-color: var(--white); 
+    color: var(--green);
 }
 
 section {
     height: 100vh;
-    scroll-snap-align: center;
 }
 

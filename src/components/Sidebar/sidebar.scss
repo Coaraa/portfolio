@@ -5,8 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--light-beige);
-    color: var(--purple);
+    background-color: var(--light-green);
+    color: var(--white);
 
     .bg {
         position: fixed;
@@ -15,7 +15,7 @@
         left: 0;
         bottom: 0;
         width: 20vw;
-        background-color: var(--light-beige);
+        background-color: var(--light-green);
 
         @include  media(mobile) {
             width: 70dvw !important;
@@ -39,7 +39,7 @@
             a, a:visited {
                 text-decoration: none;
                 font-size: 2.5rem;
-                color: var(--purple);
+                color: var(--white);
 
                 @include  media(mobile) {
                     font-size: 2rem;

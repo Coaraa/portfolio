@@ -8,11 +8,11 @@ import Technologies from "./components/Technologies/Technologies";
 
 const App = () => {
   return <div>
-    {/* <section id="Home">
+    <section id="Home">
       <Navbar />
       <Hero />
     </section>
-    <section>
+    {/*<section>
       <About id ="About"/>
     </section>
     <section id="Projects">

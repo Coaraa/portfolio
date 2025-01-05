@@ -6,20 +6,25 @@
     position: absolute;
     z-index: 100;
 
-    .wrapper {
-        max-width: 1366px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .wrapper-name {
+        margin: 0 1.5rem;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     span {
         font-weight: bold;
+        letter-spacing: 10px;
+        color: var(--black);
     }
 
     .social {
+        position: absolute;
+        right: 1.5rem;
+        top: 0;
+        height: 100%;
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -27,7 +32,7 @@
         img {
             width: 1.5rem;
             height: 1.5rem;
-            filter : invert(1);
+            filter : invert(40%) sepia(20%) saturate(556%) hue-rotate(87deg) brightness(88%) contrast(86%);
         }
     }
 }
@@ -35,12 +40,7 @@
 @media screen and (max-width: 1530px) {
     .navbar {
         .wrapper {
-            justify-content: flex-end;
             padding: 1rem;
-        }
-
-        span {
-            display: none;
         }
     }
     
