@@ -1,5 +1,9 @@
-import { motion } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { motion, useScroll, useInView, useMotionValueEvent, useTransform } from "framer-motion";
 import "./hero.scss";
+import Lottie from "react-lottie";
+import animationData from "../../lotties/mouse-scroll.json";
+import Rectangle from "./Scroll-animation/Rectangle";
 
 const textVariants = {
     initial: {
@@ -16,37 +20,55 @@ const textVariants = {
     }
 }
 
-const sliderVariants = {
+
+const animateOptions = {
     initial: {
-        x: 0,
+        height: 0,
     },
     animate: {
-        x: "-500%",
+        height: "50vh",
         transition: {
-            delay: 3,
-            repeat: Infinity,
-            repeatType: "mirror",
-            duration: 30,
+            duration: 10,
         }
     }
 }
 
 const Hero = () => {
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
+
+    const targetRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: targetRef,
+        offset: ["start start", "end start"],
+    });
+
+    const scaleY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
     return (
         <div className="hero">
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
                     <motion.h2 variants={textVariants}>PORTFOLIO</motion.h2>
-                    <motion.h1 variants={textVariants}>SITHIDEJ Clara</motion.h1>
-                    <motion.div className="buttons" variants={textVariants}>
-                        <motion.button onclick="window.scrollTo({top: getElementById('Portfolio').offsetTop, behavior: 'smooth'})" variants={textVariants}>↓ Découvrir mes projets ↓</motion.button>
-                        <motion.button onclick="window.scrollTo({top: getElementById('Contact').offsetTop, behavior: 'smooth'})" variants={textVariants}>Me contacter</motion.button>
-                    </motion.div>
-                </motion.div>
-                <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-                    Étudiante ingénieure en informatique à Polytech Lyon
+                    <motion.h1 variants={textVariants} className="lastname">SITHIDEJ</motion.h1>
+                    <motion.h1 variants={textVariants} className="firstname">Clara</motion.h1>
+
+                    <div className="svgContainer">
+                        <motion.div className="mouseSvg" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 2 }}>
+                            <Lottie options={defaultOptions} height={80} width={80} />
+                        </motion.div>
+                    </div>
                 </motion.div>
             </div>
+            {/* <motion.div ref={targetRef} className="animated-bg" style={{scaleY}} ></motion.div> */}
+            <Rectangle />
         </div>
     )
 }

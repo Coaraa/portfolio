@@ -19,7 +19,7 @@ const variants = {
 
 const About = () => {
   return (
-    <motion.div className="about" variants={variants} initial="initial" whileInView="animate">
+    <div className="about" variants={variants} initial="initial" whileInView="animate">
       <div className='avatarContainer'>
         <img src="/avatar.png" alt="Avatar" />
       </div>
@@ -34,7 +34,7 @@ const About = () => {
 
       </div>
 
-    </motion.div>
+    </div>
   )
 }
 

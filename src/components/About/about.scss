@@ -1,12 +1,14 @@
 @import "../../app.scss";
 
 .about {
-    max-width: 1366px;
-    height: 100%;
+    max-width: 1280px;
+    height: 200vh;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 4vw;
+    position: relative;
+    z-index: 15;
 
     @include media(mobile, tablet, desktop) {
         flex-direction: column;
@@ -23,6 +25,7 @@
         }
 
         img {
+            display: none;
             width: 100%;
             border-radius: 50%;
             background-color: var(--light-beige);
@@ -43,7 +46,7 @@
         .title-section {
             font-size: 5rem;
             font-weight: bold;
-            color: var(--light-beige);
+            color: var(--light-gray);
 
             @include media(mobile, tablet, desktop) {
                 font-size: 3rem;
@@ -52,7 +55,7 @@
 
         .text-section {
             font-size: 1.5rem;
-            color: var(--light-beige); 
+            color: var(--light-gray);
 
             @include media(mobile, tablet, desktop) {
                 font-size: 1rem;

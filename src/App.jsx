@@ -12,10 +12,10 @@ const App = () => {
       <Navbar />
       <Hero />
     </section>
-    {/*<section>
+    <section>
       <About id ="About"/>
     </section>
-    <section id="Projects">
+    {/*<section id="Projects">
       <Projects />
     </section>
     <section>
