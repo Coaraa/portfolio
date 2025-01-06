@@ -67,20 +67,10 @@
         }
 
         .svgContainer {
-            @include media(mobile) {
+            @include media(mobile, tablet) {
                 display: none;
             }
         }
-    }
-
-    .animated-bg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50%;
-        background: var(--black);
-        z-index: 10;
     }
 }
 

@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { motion, useScroll, useInView, useMotionValueEvent, useTransform } from "framer-motion";
+import React from "react";
+import { motion} from "framer-motion";
 import "./hero.scss";
 import Lottie from "react-lottie";
 import animationData from "../../lotties/mouse-scroll.json";
@@ -20,19 +20,6 @@ const textVariants = {
     }
 }
 
-
-const animateOptions = {
-    initial: {
-        height: 0,
-    },
-    animate: {
-        height: "50vh",
-        transition: {
-            duration: 10,
-        }
-    }
-}
-
 const Hero = () => {
 
     const defaultOptions = {
@@ -43,14 +30,6 @@ const Hero = () => {
             preserveAspectRatio: "xMidYMid slice"
         }
     };
-
-    const targetRef = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: targetRef,
-        offset: ["start start", "end start"],
-    });
-
-    const scaleY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
     return (
         <div className="hero">
@@ -67,7 +46,6 @@ const Hero = () => {
                     </div>
                 </motion.div>
             </div>
-            {/* <motion.div ref={targetRef} className="animated-bg" style={{scaleY}} ></motion.div> */}
             <Rectangle />
         </div>
     )

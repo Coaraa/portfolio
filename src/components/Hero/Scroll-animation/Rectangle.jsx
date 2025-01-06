@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import "./rectangle.scss";
 
 const Rectangle = () => {
     const { scrollY } = useScroll();
@@ -10,26 +11,18 @@ const Rectangle = () => {
     
     return (
         <div>
-            <motion.div
+            <motion.div className="rectangle"
                 style={{
-                    width: "100%",
                     height: heightUp,
                     opacity: opacity,
-                    backgroundColor: "#4C6B56",
-                    position: "absolute",
                     bottom: "50%",
-                    left: 0,
                 }}
             />
-            <motion.div
+            <motion.div className="rectangle"
                 style={{
-                    width: "100%",
                     height: heightDown,
                     opacity: opacity,
-                    backgroundColor: "#4C6B56",
-                    position: "absolute",
                     top: "50%",
-                    left: 0,
                 }}
             />
         </div>
