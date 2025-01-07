@@ -2,69 +2,119 @@
 
 .about {
     max-width: 1280px;
-    height: 200vh;
+    height: 180vh;
     margin: auto;
-    display: flex;
-    align-items: start;
-    gap: 4vw;
     position: relative;
     z-index: 15;
 
-    @include media(mobile, tablet, desktop) {
+    .presentation {
+        width: 100%;
+        height: 110vh;
+        text-align: center;
+        color: var(--light-gray);
+        padding: 25vh 20% 0 20%;
+        display: flex;
         flex-direction: column;
-        gap: 2rem;
-        margin: 2rem;
-        padding-top: 2rem;
-    }
+        justify-content: start;
+        align-items: center;
+        gap: 6rem;
 
-    .avatarContainer {
-        flex: 1;
+        h2 {
+            font-size: 1.8rem;
+            letter-spacing: 10px;
+            font-weight: 400;
 
-        @include media(mobile, tablet, desktop) {
-            width: 30%;
+            @include media(mobile) {
+                font-size: 1.5rem;
+            }
         }
 
-        img {
-            display: none;
-            width: 100%;
-            border-radius: 50%;
-            background-color: var(--light-beige);
-        }
-    }
+        h1 {
+            font-size: 4rem;
 
-    .textContainer {
-        flex: 2;
-        display : flex;
-        flex-direction: column;
-        gap: 3rem;
-
-        @include media(mobile, tablet, desktop) {
-            width: 100%;
-            gap: 1rem;
-        }
-
-        .title-section {
-            font-size: 5rem;
-            font-weight: bold;
-            color: var(--light-gray);
-
-            @include media(mobile, tablet, desktop) {
+            @include media(mobile) {
                 font-size: 3rem;
             }
         }
 
-        .text-section {
-            font-size: 1.5rem;
-            color: var(--light-gray);
+        button {
+            background-color: var(--light-gray);
+            color: var(--green);
+            border: 1px solid var(--light-gray);
+            border-radius: 3px;
+            padding: 0.5rem 1.5rem;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 20rem;
 
-            @include media(mobile, tablet, desktop) {
-                font-size: 1rem;
+            &:hover {
+                background-color: var(--green);
+                color: var(--light-beige);
+                border: 1px solid var(--light-beige);
+                border-radius: 3px;
             }
 
-            p {
-                margin-bottom: 1rem;
+            @include media(mobile) {
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+    .aboutContainer {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        .avatarContainer {
+            flex: 1;
+
+            @include media(mobile, tablet, desktop) {
+                width: 30%;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 50%;
+                background-color: var(--light-gray);
+            }
+        }
+
+        .textContainer {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            @include media(mobile, tablet, desktop) {
+                width: 100%;
+                gap: 1rem;
+            }
+
+            .title-section {
+                font-size: 4.5rem;
+                font-weight: bold;
+                color: var(--light-gray);
+
+                @include media(mobile, tablet, desktop) {
+                    font-size: 3rem;
+                }
+            }
+
+            .text-section {
+                font-size: 1.4rem;
+                color: var(--light-gray);
+
+                @include media(mobile, tablet, desktop) {
+                    font-size: 1rem;
+                }
+
+                p {
+                    margin-bottom: 1rem;
+                }
             }
         }
     }
-
 }
