@@ -2,88 +2,88 @@
 
 .contact {
     height: 100%;
-    max-width: 1366px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    gap: 4vw;
+    background-color: var(--light-green);
+    position: relative;
+    z-index: 15;
 
-    @include media(mobile) {
-        margin: 1rem;
-    }
-
-    @include media(tablet, desktop) {
-        margin: 2rem;
-    }
-
-    .textContainer {
-        flex : 3;
+    .wrapper {
+        height: 100%;
+        max-width: 1280px;
+        margin: auto;
         display: flex;
-        flex-direction: column;
-        gap: 3rem;
-
-        @include media(mobile) {
-            gap: 1rem;
-        }
-
-        @include media(tablet) {
-            gap: 2rem;
-        }
-
-        h1 {
-            font-size: 5rem;
-            font-weight: bold;
-
-            @include media(mobile) {
-                font-size: 2rem;
-                margin-bottom: 0.5rem;
-            }
-
-            @include media(tablet) {
-                font-size: 3rem;
-                margin-bottom: 1rem;
-            }
-        }
-
-        h2 {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--beige);
+        align-items: center;
+        gap: 4vw;
+        
+        .textContainer {
+            flex: 3;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            flex-direction: column;
+            gap: 3rem;
 
             @include media(mobile) {
-                font-size: 1rem;
+                gap: 1rem;
             }
 
             @include media(tablet) {
+                gap: 2rem;
+            }
+
+            h1 {
+                font-size: 5rem;
+                font-weight: bold;
+                color: var(--light-gray);
+
+                @include media(mobile) {
+                    font-size: 2rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                @include media(tablet) {
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            h2 {
+                font-size: 2rem;
+                font-weight: bold;
+                color: var(--light-gray);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                @include media(mobile) {
+                    font-size: 1rem;
+                }
+
+                @include media(tablet) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            a,
+            a:visited {
+                color: var(--black);
                 font-size: 1.5rem;
+
+                @include media(mobile) {
+                    font-size: 1rem;
+                }
+            }
+
+            img {
+                width: auto;
+                height: 2rem;
+                filter: invert(97%) sepia(90%) saturate(0%) hue-rotate(215deg) brightness(99%) contrast(82%);
             }
         }
 
-        a, a:visited {
-            color: var(--white);
-            font-size: 1.5rem;
-            font-weight: bold;
+        .svgContainer {
+            flex: 2;
 
-            @include media(mobile) {
-                font-size: 1rem;
+            @include media(mobile, tablet) {
+                display: none;
             }
-        }
-
-        img {
-            width: auto;
-            height: 2rem;
-            filter : invert(90%) sepia(17%) saturate(441%) hue-rotate(9deg) brightness(88%) contrast(91%);
-        }
-    }
-
-    .svgContainer {
-        flex : 2;
-
-        @include media(mobile, tablet) {
-            display: none;
         }
     }
 }

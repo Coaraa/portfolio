@@ -17,7 +17,7 @@
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        gap: 6rem;
+        gap: 5rem;
 
         h2 {
             font-size: 1.8rem;
@@ -65,7 +65,7 @@
     .aboutContainer {
         height: 80vh;
         display: flex;
-        align-items: center;
+        align-items: start;
         gap: 4rem;
 
         .avatarContainer {
